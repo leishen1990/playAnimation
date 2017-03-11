@@ -1,0 +1,113 @@
+.circle { 
+  display: block;
+  background: black;
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  margin: 0; 
+ /* background: radial-gradient(circle at 100px 100px, #5cabff, #000);*/
+  background:radial-gradient(#ace 5%, #f96 25%, #fff 33%);
+  animation-fill-mode:forwards;
+  animation: ball 1s ease 1s 10 alternate; 
+}
+
+#content{
+  position:relative;
+  top:480px;
+  animation: toTop 15s ease forwards;
+}
+
+
+
+@keyframes toTop{
+  100%{
+    top:0px;
+  }
+}
+
+@keyframes ball{
+  14%{
+    background:radial-gradient(#ace 5%, #f96 25%, #fff 34%)
+  }
+  28%{
+    background:radial-gradient(#ace 5%, #f96 25%, #fff 35%)
+  }
+  42%{
+    background:radial-gradient(#ace 5%, #f96 25%, #fff 36%)
+  } 
+  56%{
+    background:radial-gradient(#ace 5%, #f96 25%, #fff 37%)
+  }
+  70%{
+    background:radial-gradient(#ace 5%, #f96 25%, #fff 38%)
+  }
+  84%{
+    background:radial-gradient(#ace 5%, #f96 25%, #fff 39%)
+  }
+  100%{
+    background:radial-gradient(#ace 5%, #f96 25%, #fff 40%)
+  }
+}
+
+@keyframes bigger{
+  5%{
+    background:radial-gradient(#ace 5%, #f96 25%, #fff 34%);
+  }
+  10%{
+    background:radial-gradient(#ace 5%, #f96 25%, #fff 36%);
+  }
+  15%{
+    background:radial-gradient(#ace 5%, #f96 25%, #fff 38%);
+  }
+  20%{
+    background:radial-gradient(#ace 5%, #f96 25%, #fff 40%);
+  }
+  25%{
+    background:radial-gradient(#ace 5%, #f96 25%, #fff 42%);
+  }
+  30%{
+    background:radial-gradient(#ace 5%, #f96 25%, #fff 44%);
+  }
+  35%{
+    background:radial-gradient(#ace 5%, #f96 25%, #fff 46%);
+  }
+  40%{
+    background:radial-gradient(#ace 5%, #f96 25%, #fff 48%);
+  }
+  45%{
+    background:radial-gradient(#ace 5%, #f96 25%, #fff 50%);
+  }
+  50%{
+    background:radial-gradient(#ace 5%, #f96 25%, #fff 52%);
+  }
+  55%{
+    background:radial-gradient(#ace 5%, #f96 25%, #fff 54%);
+  }
+  60%{
+    background:radial-gradient(#ace 5%, #f96 25%, #fff 56%);
+  }
+   65%{
+    background:radial-gradient(#ace 5%, #f96 25%, #fff 58%);
+  }
+  70%{
+    background:radial-gradient(#ace 5%, #f96 25%, #fff 60%);
+  }
+   75%{
+    background:radial-gradient(#ace 5%, #f96 25%, #fff 62%);
+  }
+  80%{
+    background:radial-gradient(#ace 5%, #f96 25%, #fff 64%);
+  }
+   85%{
+    background:radial-gradient(#ace 5%, #f96 25%, #fff 66%);
+  }
+  90%{
+    background:radial-gradient(#ace 5%, #f96 25%, #fff 68%);
+  }
+   95%{
+    background:radial-gradient(#ace 5%, #f96 25%, #fff 70%);
+  }
+  100%{
+    background:radial-gradient(#ace 5%, #f96 25%, #fff 72%);
+  }
+}

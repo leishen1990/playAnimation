@@ -1,0 +1,40 @@
+<html>
+  <head></head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./ball.css">
+  <body>
+    <div id="content">
+      <figure id="cir" class="circle"></figure>
+    </div>
+    
+    <!-- <svg width="300px" height="300px" version="1.1" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="orange_red" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" style="stop-color:rgb(255,255,255);
+        stop-opacity:1"/>
+        <stop offset="70%" style="stop-color:rgb(255,144,144);
+        stop-opacity:1"/>
+        <stop offset="100%" style="stop-color:rgb(255,0,0);
+        stop-opacity:1"/>
+        </linearGradient>
+      </defs>
+      <circle cx="100" cy="50" r="40" stroke="black" stroke-width="2" fill="red"/>
+      <circle cx="120" cy="70" r="7"  fill="url(#orange_red)"/>
+    </svg> -->
+
+    
+
+  </body>
+  <script type="text/javascript" src="../assets/js/jquery-3.1.1.js"></script>
+  <script>
+   /* document.querySelector("#cir").addEventListener("webkitAnimationEnd",function(){
+      alert(1);
+    })*/
+    $("#cir").on("webkitAnimationEnd",function(){
+      $(this).css({
+        animation:"bigger 2s ease",
+        "animation-fill-mode":"forwards"
+      })
+    })
+  </script>
+</html>
